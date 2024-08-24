@@ -13,7 +13,7 @@ class ProductController extends Controller
 
     public function index(){
 
-        $porducts = Product::get();
+        $porducts = Product::simplePaginate(10);
         return view('welcome', ['porducts'=> $porducts]);
     }
 

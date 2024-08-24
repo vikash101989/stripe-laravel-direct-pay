@@ -46,6 +46,11 @@
                 </tbody>
             </table>
         </div>
+        {!! $porducts->links() !!}
+        <div class="row">
+        &nbsp
+        </div>
+        <div class="row">&nbsp</div>
     </div>
 
 @endsection
